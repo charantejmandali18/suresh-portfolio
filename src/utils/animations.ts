@@ -1,6 +1,7 @@
 // Initialize anime.js only in browser environment
 const getAnime = () => {
   if (typeof window !== 'undefined') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const animeLib = require('animejs');
     return animeLib.default || animeLib;
   }
@@ -8,7 +9,7 @@ const getAnime = () => {
 };
 
 // Text animation utilities
-export const animateText = (element: string | HTMLElement, options?: any) => {
+export const animateText = (element: string | HTMLElement, options?: Record<string, unknown>) => {
   const anime = getAnime();
   if (!anime) return;
   const defaultOptions = {
@@ -32,10 +33,10 @@ export const typewriterEffect = (element: string | HTMLElement) => {
   if (!anime) return;
   const el = typeof element === 'string' ? document.querySelector(element) : element;
   if (!el) return;
-  
+
   const text = el.textContent || '';
   el.textContent = '';
-  el.style.opacity = '1';
+  (el as HTMLElement).style.opacity = '1';
   
   return anime({
     targets: el,
@@ -43,7 +44,7 @@ export const typewriterEffect = (element: string | HTMLElement) => {
     easing: 'linear',
     round: 1,
     duration: text.length * 50,
-    update: function(anim) {
+    update: function(anim: { animations: { currentValue: number }[] }) {
       el.innerHTML = text.substring(0, Math.round(anim.animations[0].currentValue));
     }
   });
@@ -103,9 +104,9 @@ export const createParticles = (container: string | HTMLElement) => {
 export const cardHoverAnimation = (card: HTMLElement) => {
   const anime = getAnime();
   if (!anime) return () => {};
-  let animation: any | null = null;
-  
-  const handleMouseEnter = (e: MouseEvent) => {
+  let animation: unknown | null = null;
+
+  const handleMouseEnter = () => {
     animation = anime({
       targets: card,
       scale: 1.05,
@@ -116,7 +117,9 @@ export const cardHoverAnimation = (card: HTMLElement) => {
   };
   
   const handleMouseLeave = () => {
-    if (animation) animation.pause();
+    if (animation && typeof animation === 'object' && 'pause' in animation) {
+      (animation as { pause: () => void }).pause();
+    }
     anime({
       targets: card,
       scale: 1,
@@ -156,7 +159,7 @@ export const cardHoverAnimation = (card: HTMLElement) => {
 };
 
 // Stagger reveal animation for lists
-export const staggerReveal = (targets: string | NodeList | HTMLElement[], options?: any) => {
+export const staggerReveal = (targets: string | NodeList | HTMLElement[], options?: Record<string, unknown>) => {
   const anime = getAnime();
   if (!anime) return;
   const defaultOptions = {
