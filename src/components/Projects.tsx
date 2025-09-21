@@ -48,7 +48,7 @@ const projects: Project[] = [
   {
     id: 'apoc',
     title: 'APOC',
-    subtitle: 'Airport Operational Control Centre',
+    subtitle: 'Airport Predictive Operational Centre',
     description: 'Centralized command center for real-time airport operations management, integrating multiple stakeholder systems.',
     impact: [
       'Unified operational view across departments',

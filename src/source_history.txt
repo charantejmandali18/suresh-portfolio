@@ -1,0 +1,153 @@
+
+
+Profound leader with 20+ years of experience in Airport IT Projects and Operations.
+
+20 years of experience in Airport IT projects and development, the first Airport implementation is Rajiv Gandhi International Airport, Hyderabad, it is a great experience and step-in for Airport IT technology.
+ In continuation to the above, I have managed the Interim IT Service Delivery for 1 ½ Year and presently Heading both the operations & projects in the position of Associate General Manager – IT Operations & Projects.
+
+All my assignments are involved of all stages from RFP's, Budgeting, Procurement, Value engineering, Planning, Design, Execution, Installations, Testing & Commissioning, ORAT (Operational Readiness and Transfer and Handover).
+
+
+Synopsis of Year-wise Journey –
+
+
+Joined as Coordinator in GHIAL IT Project Management Team (as key member in Team) for new Greenfield Airport Project for the period of 04.05.2005 to 30.04.2006
+
+Responsibilities Handled –
+
+Survey of Airport IT Backbone
+Preparation of Network Backbone Architecture for Airport
+Involved in preparing the IT Scope and Design of IT Systems
+Maintaining and Review of Airport peripheral drawings for IT FOC design
+
+
+Promoted as Technical Coordinator in IT Project Management.
+
+Period 01.05.2006 to 31.03.2007
+
+Responsibilities Handled during project execution as one of core team member –
+
+Implementation of SCS works in Greenfield Airport
+Implementation & set up of Check-in counters & Boarding Gate counters under Passenger Processing System
+Integration of counters with RESA Application & AODB (Airport Operational Data Base)
+Installation of CCTV Surveillance Cameras with Milestone VMS
+Installation of LG, SHARP, & Samsung Screens for FIDS, MATV (integration with SCALA), Videowalls
+Installation of Honeywell Access Control System (integration with FAS)
+Installation of Siemens 4000 IP Telephony System
+Installation of BOSCH PAVA System with Speakers, Amplifiers, Switchers, etc.
+Transitional key member for switching over from Lotus Notes to MS Exchange for emailing system in GHIAL
+Installation of all desktops for Project team members with High End MFPs
+
+
+Promoted as Senior Technical Coordinator.
+
+Period 01.04.2007 to 31.03.2009
+
+Responsibilities Handled during project execution –
+
+Successfully completed in installing all the IT systems
+Successfully completed all the testing & commissioning of all systems
+Successfully completed the testing & commissioning for enabling the Airlines to operate the check-in counters & boarding gate counters, Ramp Office, BMA, Engineering Building, etc. in establishing the connectivity for getting the BSMs & BPMs from SITA for all Airlines from their respective Airline hosts
+Successfully implemented the IT systems in AOCC (Airport Operation Control Centre) and SOCC (Security Operation Control Centre for CISF)
+Successfully completed the new Greenfield Airport project of RGIA under GHIAL
+Successfully completed the CUSS installations in Airport for better Passenger Experience
+Key Member in completing the ORAT (Operational Readiness of Airport and Transfer) in taking all the concessionaire’s satisfaction to switch over from previous Airport to RGIA.
+Deployment of BMC Remedy solution to strengthen the ITSM process for business performance
+Deployment of monitoring tools like Nagios, Fortinet analyser to have better operational performance of IT Systems strengthening the IT Operations
+
+
+Promoted as Executive – IT Operations.
+
+Period 01.04.2009 to 06.06.2010
+
+Responsibilities Handled in both Projects & Operations –
+
+Operations –
+
+Handled EUS of IT Services & Support in Airport IT Operations
+Streamlined and aligned all the processes as per ITSM
+Managed IT Service Desk towards service driven to result oriented
+Participated in both internal & external audits and successfully attained ISO 20K certification
+Met the regulations of RGIA by adopting the Emergency Exercises, Mock Anti Hi-Jack drills, etc.
+First time built-in the CCV (Command Control Vehicle) to have a better visibility in on-ground incidents for AOCC, ARFF, Airside, Security teams & ATC
+Initiated and successfully adopted the cross-functional practise with all Engineer’s towards value engineering and resource optimization to utilize the qualified resources for different projects
+Projects –
+
+Period 07.06.2010 to 16.10.20212
+
+After my first implementation of Hyderabad Airport, I have taken the assignment on deputation to Indira Gandhi International Airport (IGIA) - Delhi, the IGI Airport is a Mega Infrastructure project and its great opportunity to work for such a big National Asset. As part of IGIA project, the first stage of implementation in Terminal – 2D & Terminal-3 with Check-in & Boarding Gate counters set up, FIDS & MATV Displays, CCTV system, Access Control System, etc…from 2010 to 2011 for 2 years.
+
+
+Promoted as Senior Engineer / Duty Manager – IT Operations in 24x7 Airport Operations.
+
+Period 17.10.2012 to 10.11.2016
+
+Responsibilities Handled in both Projects & Operations –
+
+Handled 24x7 shift operations smoothly with a team size of 30 members with both core and outsource teams
+100% met with all agreed SLAs & System Availability
+Ensured end device availability on weekly basis
+Ensured all Preventive Maintenance activities adhered with proper approval process
+Accredited with ASI Quality Certifications continuously with World No.1 & 2 positions in 12-15 MPPA size in Airports
+Well supported to RGIA in all critical scenarios without any escalations
+Took lead in deploying IOT platform for Smart Trolley project to enhance Airport Operations and Passenger experience
+Ensured availability of Spares to meet SLAs
+Driven process improvements, reduce costs and improve customer satisfaction.
+
+
+Period 11.11.2016 to 30.09.2020
+
+Delivering innovative solutions and business models, adept in developing and executing successful strategies that drive technology solutions to support business objectives
+
+Responsibilities Handled in both Digital Automation like E-Boarding –
+
+Lead the team with both Application & Technical teams in deploying the end-to-end process of e-boarding solution
+Man less operations at boarding gates
+Enhancement in Security monitoring
+Reduction of no-show process of PAX
+
+Promoted as Associate Manager / Operations In-Charge.
+
+Period 01.10.2020 to 31.03.2021
+
+Lead the operations with team size of 120+
+Handled operations meticulously meeting the SLAs
+Improved the operational efficiency with inter-departmental business models
+Generated business revenue of taking new opportunity like GMR MRO IT services & support
+Contracts Management i.e. PR / PO process.
+Vendor Management – Technical Review and Capability review of selected vendors
+Building and Motivated in-house talent to avoid the outsource dependencies
+Aligned all the OEM’s to provide their support with CTR values
+Weekly & Monthly reviews with all domains and vendors to provide the confidence to clients
+
+Promoted as Operations Manager – IT Operations
+
+Period 01.04.2021 to 31.03.2023
+
+Lead the team with all domains in IT Operations
+Attained new business opportunities from GMR Cargo & HDFRL
+Successfully handled 4 clients by providing IT Services & Support i.e. GHIAL, GMR MRO, GMR Cargo & HDFRL organizations
+Executed successful strategies that drive technology solutions to support business objects
+Involved and Lead the team in completion of Tech Refresh of Network, Servers, Application like UFIS to AMS, etc.
+Taken up the additional responsibilities to handle expansion project of existing airport terminal with new technologies
+
+Additionally, taken up the project in conceptualization, technology identification, policy design, stakeholder buy-in for the most successful DIGIYATRA implementation for the first time in country within a period of one year by interfacing with DIGIYATRA Foundation, Government of India.
+
+
+
+ 
+Promoted as Sr Manager / Associate General Manager – IT Operations & Projects
+
+Period 01.04.2023 to till date
+
+I have worked and successfully executed and commissioned the implementation of prestigious APOC project (Airport Predictive Operation Centre) by using AI powered digital twins integrate real-time data and generative modelling in port management.
+
+Also, I have led and handled as “Interim Head – Service Delivery of IT” for 1 ½ Year.
+
+Successfully led and managed the IT Operations
+Successfully completed the projects like Main Car Park CCTV Project, Upgradation of Reserved Lounges, General Aviation Terminal, new Cargo T2 terminal, Domestic SHA Modification of IT works, Auxiliary Building IT works, etc.
+Successfully completed the video analytics with data integration in GMR Kamalanga Power Plant, Odisha.
+Participated in technical bidding for Apollo Hospitals, DIAL APOC project, Cochin Airport, Singapore Shipping Corporation, Vinci Airports in Europe, etc.
+Increased the revenue from 100 Cr to 126 Cr with concessionaires inclusive of Airlines, Retailers & new stakeholders and maintained the revenue graph continuously 2 years
+
+

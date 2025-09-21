@@ -81,7 +81,8 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-gray-400 leading-relaxed max-w-lg"
->                Leading digital transformation in aviation with 30+ years of expertise in airport operations and IT infrastructure.
+              >
+                Leading digital transformation in aviation with 30+ years of expertise in airport operations and IT infrastructure.
               </motion.p>
             </div>
             
