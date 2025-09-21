@@ -5,8 +5,9 @@ import { Target, Lightbulb, Users, TrendingUp } from 'lucide-react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 text-white relative">
+
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,7 +15,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <div className="w-24 h-1 bg-emerald-500 mx-auto"></div>
         </motion.div>
         
@@ -28,26 +29,26 @@ const About = () => {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-8 border border-emerald-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Aviation IT Leader</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">Aviation IT Leader</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
                   Senior IT Operations Manager with <span className="font-semibold text-emerald-600">30+ years</span> of 
                   comprehensive experience in aviation IT infrastructure and digital transformation.
                 </p>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Currently leading <span className="font-semibold text-emerald-600">24x7 IT Operations</span> at WAISL Limited, 
                   managing critical aviation systems and driving digital innovation across airport operations.
                 </p>
               </div>
               
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-50 rounded-xl p-4 text-center border">
-                  <div className="text-2xl font-bold text-emerald-600 mb-1">12M → 30M</div>
-                  <div className="text-sm text-gray-600">PAX Growth Supported</div>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-emerald-400 mb-1">12M → 30M</div>
+                  <div className="text-sm text-gray-300">PAX Growth Supported</div>
                 </div>
-                <div className="bg-gray-50 rounded-xl p-4 text-center border">
-                  <div className="text-2xl font-bold text-teal-600 mb-1">5+</div>
-                  <div className="text-sm text-gray-600">ISO Certifications</div>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-teal-400 mb-1">5+</div>
+                  <div className="text-sm text-gray-300">ISO Certifications</div>
                 </div>
               </div>
             </motion.div>
@@ -60,43 +61,43 @@ const About = () => {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-                <div className="bg-emerald-100 p-3 rounded-lg">
-                  <Target className="w-6 h-6 text-emerald-600" />
+              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors duration-300">
+                <div className="bg-emerald-500/20 p-3 rounded-lg">
+                  <Target className="w-6 h-6 text-emerald-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Veteran Aviation Expertise</h4>
-                  <p className="text-gray-600 text-sm">Expert in commissioning both greenfield and brownfield airports with comprehensive understanding of aviation operations.</p>
+                  <h4 className="font-semibold text-white mb-2">Veteran Aviation Expertise</h4>
+                  <p className="text-gray-300 text-sm">Expert in commissioning both greenfield and brownfield airports with comprehensive understanding of aviation operations.</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-                <div className="bg-teal-100 p-3 rounded-lg">
-                  <Lightbulb className="w-6 h-6 text-teal-600" />
+              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors duration-300">
+                <div className="bg-teal-500/20 p-3 rounded-lg">
+                  <Lightbulb className="w-6 h-6 text-teal-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Digital Transformation</h4>
-                  <p className="text-gray-600 text-sm">Leading implementation of cutting-edge technologies including APOC, Digital Twin, and Digi Yatra systems.</p>
+                  <h4 className="font-semibold text-white mb-2">Digital Transformation</h4>
+                  <p className="text-gray-300 text-sm">Leading implementation of cutting-edge technologies including APOC, Digital Twin, and Digi Yatra systems.</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-                <div className="bg-emerald-100 p-3 rounded-lg">
-                  <Users className="w-6 h-6 text-emerald-600" />
+              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors duration-300">
+                <div className="bg-emerald-500/20 p-3 rounded-lg">
+                  <Users className="w-6 h-6 text-emerald-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Leadership Excellence</h4>
-                  <p className="text-gray-600 text-sm">Managing 130+ team members with proven expertise in transitional, situational, and visionary leadership.</p>
+                  <h4 className="font-semibold text-white mb-2">Leadership Excellence</h4>
+                  <p className="text-gray-300 text-sm">Managing 130+ team members with proven expertise in transitional, situational, and visionary leadership.</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-                <div className="bg-teal-100 p-3 rounded-lg">
-                  <TrendingUp className="w-6 h-6 text-teal-600" />
+              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors duration-300">
+                <div className="bg-teal-500/20 p-3 rounded-lg">
+                  <TrendingUp className="w-6 h-6 text-teal-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Business Impact</h4>
-                  <p className="text-gray-600 text-sm">Achieved multiple ISO certifications and industry awards while maintaining operational excellence and cost optimization.</p>
+                  <h4 className="font-semibold text-white mb-2">Business Impact</h4>
+                  <p className="text-gray-300 text-sm">Achieved multiple ISO certifications and industry awards while maintaining operational excellence and cost optimization.</p>
                 </div>
               </div>
             </motion.div>
@@ -108,7 +109,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white"
+            className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-2xl p-8"
           >
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-2">Professional Vision</h3>

@@ -44,8 +44,9 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="achievements" className="py-20 text-white relative">
+
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +54,7 @@ const Achievements = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Key Achievements</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Key Achievements</h2>
           <div className="w-24 h-1 bg-emerald-500 mx-auto"></div>
         </motion.div>
         
@@ -65,19 +66,19 @@ const Achievements = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 group border border-gray-100"
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 group"
             >
               <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mb-4 group-hover:bg-emerald-600 transition-colors duration-300">
-                  <achievement.icon className="w-8 h-8 text-emerald-600 group-hover:text-white transition-colors duration-300" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-500/20 rounded-full mb-4 group-hover:bg-emerald-500 transition-colors duration-300">
+                  <achievement.icon className="w-8 h-8 text-emerald-400 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{achievement.title}</h3>
-                <span className="inline-block bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-medium">
+                <h3 className="text-xl font-bold text-white mb-2">{achievement.title}</h3>
+                <span className="inline-block bg-emerald-500 text-white text-xs px-3 py-1 rounded-full font-medium">
                   {achievement.highlight}
                 </span>
               </div>
               
-              <p className="text-gray-700 text-center leading-relaxed">{achievement.description}</p>
+              <p className="text-gray-300 text-center leading-relaxed">{achievement.description}</p>
             </motion.div>
           ))}
         </div>
@@ -88,29 +89,29 @@ const Achievements = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl p-8 text-white"
+          className="mt-16 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-2xl p-8"
         >
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2">Impact Metrics</h3>
-            <p className="text-emerald-100">Quantifiable results from leadership and operations</p>
+            <h3 className="text-2xl font-bold mb-2 text-white">Impact Metrics</h3>
+            <p className="text-gray-300">Quantifiable results from leadership and operations</p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-sm text-emerald-100">Operations Coverage</div>
+              <div className="text-3xl font-bold mb-2 text-emerald-400">24/7</div>
+              <div className="text-sm text-gray-300">Operations Coverage</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">130+</div>
-              <div className="text-sm text-emerald-100">Team Members</div>
+              <div className="text-3xl font-bold mb-2 text-teal-400">130+</div>
+              <div className="text-sm text-gray-300">Team Members</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">15+</div>
-              <div className="text-sm text-emerald-100">Years at GMR</div>
+              <div className="text-3xl font-bold mb-2 text-emerald-400">15+</div>
+              <div className="text-sm text-gray-300">Years at GMR</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">5+</div>
-              <div className="text-sm text-emerald-100">Major Certifications</div>
+              <div className="text-3xl font-bold mb-2 text-teal-400">5+</div>
+              <div className="text-sm text-gray-300">Major Certifications</div>
             </div>
           </div>
         </motion.div>

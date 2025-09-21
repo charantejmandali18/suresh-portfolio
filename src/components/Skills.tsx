@@ -60,8 +60,9 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-20 text-white relative">
+
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +70,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Core Competencies</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Core Competencies</h2>
           <div className="w-24 h-1 bg-emerald-500 mx-auto"></div>
         </motion.div>
         
@@ -81,20 +82,20 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 group border border-gray-100"
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 group"
             >
               <div className="flex items-center mb-6">
-                <div className="bg-emerald-100 p-3 rounded-lg group-hover:bg-emerald-600 transition-colors duration-300">
-                  <category.icon className="w-6 h-6 text-emerald-600 group-hover:text-white transition-colors duration-300" />
+                <div className="bg-emerald-500/20 p-3 rounded-lg group-hover:bg-emerald-500 transition-colors duration-300">
+                  <category.icon className="w-6 h-6 text-emerald-400 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 ml-3">{category.title}</h3>
+                <h3 className="text-lg font-bold text-white ml-3">{category.title}</h3>
               </div>
               
               <ul className="space-y-3">
                 {category.skills.map((skill, idx) => (
                   <li key={idx} className="flex items-start">
                     <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700 text-sm leading-relaxed">{skill}</span>
+                    <span className="text-gray-300 text-sm leading-relaxed">{skill}</span>
                   </li>
                 ))}
               </ul>

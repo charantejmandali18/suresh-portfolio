@@ -1,17 +1,38 @@
 'use client'
 
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Building, Plane } from 'lucide-react'
+import { fadeIn, slideInLeft, slideInRight, animateNumber, addHoverScale } from '@/utils/simpleAnimations'
 
 const Hero = () => {
+  useEffect(() => {
+    // Add simple anime.js animations
+    setTimeout(() => {
+      // Fade in main content
+      fadeIn('.anime-fade-in', 100);
+      
+      // Slide in animations
+      slideInLeft('.anime-slide-left', 200);
+      slideInRight('.anime-slide-right', 400);
+      
+      // Animate numbers
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach((counter, index) => {
+        const target = parseInt(counter.getAttribute('data-target') || '0');
+        setTimeout(() => {
+          animateNumber(counter as HTMLElement, target, 2000);
+        }, 800 + index * 100);
+      });
+      
+      // Add hover effects to buttons
+      addHoverScale('.hover-scale');
+    }, 100);
+  }, [])
+
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white flex items-center justify-center relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-emerald-500/5 to-teal-500/5 rounded-full blur-3xl"></div>
-      </div>
+    <section className="min-h-screen text-white flex items-center justify-center relative">
+
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -27,7 +48,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 px-4 py-2 rounded-full text-sm font-medium"
+                className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 px-4 py-2 rounded-full text-sm font-medium anime-fade-in"
               >
                 <Plane className="w-4 h-4" />
                 Aviation IT Expert
@@ -37,7 +58,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-4xl md:text-6xl font-bold leading-tight"
+                className="text-4xl md:text-6xl font-bold leading-tight anime-slide-left"
               >
                 <span className="text-white">Mandali</span>
                 <br />
@@ -60,8 +81,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="text-gray-400 leading-relaxed max-w-lg"
-              >
-                Leading digital transformation in aviation with 30+ years of expertise in airport operations and IT infrastructure.
+>                Leading digital transformation in aviation with 30+ years of expertise in airport operations and IT infrastructure.
               </motion.p>
             </div>
             
@@ -74,7 +94,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-emerald-500/25"
+                className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-emerald-500/25 hover-scale"
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Experience
@@ -83,8 +103,8 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:sureshkumar.mandali@waisl.in"
-                className="border border-gray-600 hover:border-emerald-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+                href="mailto:sureshkumar.mandali@gmail.com"
+                className="border border-gray-600 hover:border-emerald-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover-scale"
               >
                 Get In Touch
               </motion.a>
@@ -98,7 +118,7 @@ const Hero = () => {
             >
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>sureshkumar.mandali@waisl.in</span>
+                <span>sureshkumar.mandali@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -119,9 +139,9 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 anime-slide-right hover-scale"
               >
-                <div className="text-3xl font-bold text-emerald-400 mb-2">30+</div>
+                <div className="text-3xl font-bold text-emerald-400 mb-2 counter" data-target="30">0</div>
                 <div className="text-gray-300 text-sm">Years Experience</div>
               </motion.div>
               
@@ -129,9 +149,9 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 anime-slide-right hover-scale"
               >
-                <div className="text-3xl font-bold text-teal-400 mb-2">130+</div>
+                <div className="text-3xl font-bold text-teal-400 mb-2 counter" data-target="130">0</div>
                 <div className="text-gray-300 text-sm">Team Members</div>
               </motion.div>
               
@@ -139,7 +159,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 anime-slide-right hover-scale"
               >
                 <div className="text-3xl font-bold text-emerald-400 mb-2">30M</div>
                 <div className="text-gray-300 text-sm">PAX Capacity</div>
@@ -149,7 +169,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.1 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 anime-slide-right hover-scale"
               >
                 <div className="text-3xl font-bold text-teal-400 mb-2">24/7</div>
                 <div className="text-gray-300 text-sm">Operations</div>
@@ -160,7 +180,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
-              className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-xl p-6"
+              className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-xl p-6 anime-fade-in hover-scale"
             >
               <div className="flex items-center gap-3 mb-3">
                 <Building className="w-5 h-5 text-emerald-400" />
